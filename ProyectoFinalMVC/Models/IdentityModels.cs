@@ -20,8 +20,14 @@ namespace ProyectoFinalMVC.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        //public DbContext<Clientes> clientes;
-           public ApplicationDbContext()
+        public DbSet <Clientes> clientes{get; set; }
+        public DbSet <Planes> planes { get; set; }
+        public DbSet<Confirmacion> confirmacion { get; set; }
+        public DbSet<Dentistas> dentistas { get; set; }
+        public DbSet <Citas> citas { get; set; }
+
+
+        public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }

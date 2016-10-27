@@ -7,5 +7,6 @@ namespace ProyectoFinalMVC.Models
 {
     public class Confirmacion
     {
+
     }
 }
